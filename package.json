@@ -1,0 +1,26 @@
+{
+  "name": "Character-Sheet-Generator",
+  "version": "1.0.0",
+  "description": "Project 2",
+  "main": "index.js",
+  "dependencies": {
+    "autoprefixer": "^10.1.0",
+    "postcss": "^8.2.1",
+    "tailwindcss": "^2.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jasmineteters/Character-Sheet-Generator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jasmineteters/Character-Sheet-Generator/issues"
+  },
+  "homepage": "https://github.com/jasmineteters/Character-Sheet-Generator#readme"
+}
