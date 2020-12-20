@@ -5,12 +5,16 @@
   "main": "index.js",
   "dependencies": {
     "autoprefixer": "^10.1.0",
+    "eslint": "^7.16.0",
     "postcss": "^8.2.1",
     "tailwindcss": "^2.0.2"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "eslint-config-prettier": "^7.1.0",
+    "prettier": "^2.2.1"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build-css": "tailwindcss-cli@latest build ./css/style.css -o ./css/dist.css"
   },
   "repository": {
     "type": "git",
