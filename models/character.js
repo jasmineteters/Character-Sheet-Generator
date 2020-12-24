@@ -24,26 +24,26 @@ Character.init({
 
     //header
     name: { type: DataTypes.STRING, allowNull: false },
-    character_class: { type: DataTypes.STRING, },
-    character_level: { type: DataTypes.INTEGER, },
+    character_class: { type: DataTypes.STRING },
+    character_level: { type: DataTypes.INTEGER },
     background: { type: DataTypes.STRING },
     ancestry: { type: DataTypes.STRING },
     alignment: { type: DataTypes.STRING },
     proficiency_bonus: { type: DataTypes.INTEGER },
 
     //stats
-    strength: { type: DataTypes.INTEGER, },
-    strength_bonus: { type: DataTypes.INTEGER, },
-    dexterity: { type: DataTypes.INTEGER, },
-    dexterity_bonus: { type: DataTypes.INTEGER, },
-    constitution: { type: DataTypes.INTEGER, },
-    constitution_bonus: { type: DataTypes.INTEGER, },
-    intelligence: { type: DataTypes.INTEGER, },
-    intelligence_bonus: { type: DataTypes.INTEGER, },
-    wisdom: { type: DataTypes.INTEGER, },
-    wisdom_bonus: { type: DataTypes.INTEGER, },
-    charisma: { type: DataTypes.INTEGER, },
-    charisma_bonus: { type: DataTypes.INTEGER, },
+    strength: { type: DataTypes.INTEGER },
+    strength_bonus: { type: DataTypes.INTEGER },
+    dexterity: { type: DataTypes.INTEGER },
+    dexterity_bonus: { type: DataTypes.INTEGER },
+    constitution: { type: DataTypes.INTEGER },
+    constitution_bonus: { type: DataTypes.INTEGER },
+    intelligence: { type: DataTypes.INTEGER },
+    intelligence_bonus: { type: DataTypes.INTEGER },
+    wisdom: { type: DataTypes.INTEGER },
+    wisdom_bonus: { type: DataTypes.INTEGER },
+    charisma: { type: DataTypes.INTEGER },
+    charisma_bonus: { type: DataTypes.INTEGER },
 
     //defense
     armor_class: { type: DataTypes.INTEGER },
@@ -112,9 +112,9 @@ Character.init({
     survival: { type: DataTypes.BOOLEAN },
     survival_value: { type: DataTypes.INTEGER },
 
-    passive_perception: { type: DataTypes.INTEGER},
+    passive_perception: { type: DataTypes.INTEGER },
 
-    //roleplay
+    //role play
     personality_traits: { type: DataTypes.STRING },
     ideals: { type: DataTypes.STRING },
     bonds: { type: DataTypes.STRING },
