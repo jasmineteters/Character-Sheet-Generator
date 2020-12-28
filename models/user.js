@@ -1,5 +1,5 @@
 const { Model, DataTypes } = require('sequelize');
-//const bcrypt = require('bcrypt');
+const bcrypt = require('bcrypt');
 const sequelize = require('../config/connection');
 
 class User extends Model {}
@@ -57,5 +57,5 @@ User.init(
   },
 );
 
-//need on create password verification/conversion
+
 module.exports = User;
