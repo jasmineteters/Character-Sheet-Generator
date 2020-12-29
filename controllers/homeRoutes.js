@@ -1,23 +1,24 @@
-//  for alex 
-const router = require("express").Router();
-const { character, User } = require("../models");
-const withAuth = require("../utils/auth");
+const router = require('express').Router();
+const { character, User } = require('../models');
+const withAuth = require('../utils/auth');
 
-router.get("/", async (req, res) => {
+router.get('/', async (req, res) => {
   try {
     const characterData = await character.findAll({
       include: [
         {
           model: User,
-          attributes: ["name"],
+          attributes: ['name'],
         },
       ],
     });
-   
-    const entries = characterData.map((character) => character.get({ plain: true }));
-    
-    res.render("homepage", {
-      entries,
+
+    const characters = characterData.map((character) =>
+      character.get({ plain: true }),
+    );
+
+    res.render('homepage', {
+      characters,
       logged_in: req.session.logged_in,
     });
   } catch (err) {
@@ -25,20 +26,20 @@ router.get("/", async (req, res) => {
   }
 });
 
-router.get("/character/:id", async (req, res) => {
+router.get('/character/:id', async (req, res) => {
   try {
     const characterData = await character.findByPk(req.params.id, {
       include: [
         {
           model: User,
-          attributes: ["name"],
+          attributes: ['name'],
         },
       ],
     });
 
     const character = characterData.get({ plain: true });
 
-    res.render("character", {
+    res.render('character', {
       ...character,
       logged_in: req.session.logged_in,
     });
@@ -47,14 +48,14 @@ router.get("/character/:id", async (req, res) => {
   }
 });
 
-router.get("/profile", withAuth, async (req, res) => {
+router.get('/profile', withAuth, async (req, res) => {
   try {
     const userData = await User.findByPk(req.session.user_id, {
-      attributes: { exclude: ["password"] },
+      attributes: { exclude: ['password'] },
       include: [{ model: character }],
     });
     const user = userData.get({ plain: true });
-    res.render("profile", {
+    res.render('profile', {
       ...user,
       logged_in: true,
     });
@@ -63,13 +64,13 @@ router.get("/profile", withAuth, async (req, res) => {
   }
 });
 
-router.get("/login", (req, res) => {
+router.get('/login', (req, res) => {
   if (req.session.logged_in) {
-    res.redirect("/profile");
+    res.redirect('/profile');
     return;
   }
 
-  res.render("login");
+  res.render('login');
 });
 
 module.exports = router;
