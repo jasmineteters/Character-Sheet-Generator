@@ -32,6 +32,9 @@ User.init({
       len: [8],
     },
   },
+  bio:{
+    type: DataTypes.STRING,
+  },
 
   sequelize,
   timestamps: false,
