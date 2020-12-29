@@ -9,3 +9,5 @@ User.hasMany(Character, {
   foreignKey: 'user_id',
   onDelete: 'CASCADE',
 });
+
+module.exports = { Character, User };
