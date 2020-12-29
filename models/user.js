@@ -34,6 +34,11 @@ User.init(
       },
     },
   },
+
+  bio:{
+    type: DataTypes.STRING,
+  },
+
   {
     hooks: {
       beforeCreate: async (newUserData) => {
@@ -48,6 +53,7 @@ User.init(
         return updatedUserData;
       },
     },
+
 
     sequelize,
     timestamps: false,
