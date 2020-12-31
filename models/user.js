@@ -1,5 +1,5 @@
 const { Model, DataTypes } = require('sequelize');
-//const bcrypt = require('bcrypt');
+const bcrypt = require('bcrypt');
 const sequelize = require('../config/connection');
 
 class User extends Model {}
@@ -33,11 +33,11 @@ User.init(
         len: [8],
       },
     },
+    bio: {
+      type: DataTypes.STRING,
+    },
   },
 
-  bio:{
-    type: DataTypes.STRING,
-  },
 
   {
     hooks: {
@@ -54,7 +54,6 @@ User.init(
       },
     },
 
-
     sequelize,
     timestamps: false,
     freezeTableName: true,
@@ -63,5 +62,4 @@ User.init(
   },
 );
 
-//need on create password verification/conversion
 module.exports = User;

@@ -1,5 +1,5 @@
 const { Model, DataTypes } = require('sequelize');
-//const sequelize = require('../config/connection');
+const sequelize = require('../config/connection');
 
 class Character extends Model {}
 
@@ -143,6 +143,14 @@ Character.init({
     //list of stuff
     features: { type: DataTypes.STRING },
   },
-});
+},
+{
+  sequelize,
+  timestamps: false,
+  freezeTableName: true,
+  underscored: true,
+  modelName: "entry",
+}
+);
 
 module.exports = Character;
