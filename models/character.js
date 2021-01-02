@@ -142,6 +142,12 @@ Character.init({
 
     //list of stuff
     features: { type: DataTypes.STRING },
+
+    spell_1: { type: DataTypes.STRING },
+    spell_2: { type: DataTypes.STRING },
+    spell_3: { type: DataTypes.STRING },
+    spell_4: { type: DataTypes.STRING },
+    spell_5: { type: DataTypes.STRING },
   },
 },
 {
