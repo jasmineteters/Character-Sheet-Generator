@@ -2,7 +2,11 @@ module.exports = {
   purge: [],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        dnd: ['Kaushan Script', 'cursive'],
+      },
+    },
     screens: {
       phone: '325px',
 
