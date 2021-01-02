@@ -11212,6 +11212,10 @@ video {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
+.font-dnd {
+  font-family: Kaushan Script, cursive;
+}
+
 .font-thin {
   font-weight: 100;
 }
@@ -31157,6 +31161,8 @@ video {
           animation: bounce 1s infinite;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
 @media (min-width: 325px) {
   .phone\:container {
     width: 100%;
@@ -41822,6 +41828,10 @@ video {
 
   .phone\:font-mono {
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  }
+
+  .phone\:font-dnd {
+    font-family: Kaushan Script, cursive;
   }
 
   .phone\:font-thin {
@@ -72358,6 +72368,10 @@ video {
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
+  .tablet\:font-dnd {
+    font-family: Kaushan Script, cursive;
+  }
+
   .tablet\:font-thin {
     font-weight: 100;
   }
@@ -102892,6 +102906,10 @@ video {
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
+  .laptop\:font-dnd {
+    font-family: Kaushan Script, cursive;
+  }
+
   .laptop\:font-thin {
     font-weight: 100;
   }
@@ -133424,6 +133442,10 @@ video {
 
   .desktop\:font-mono {
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  }
+
+  .desktop\:font-dnd {
+    font-family: Kaushan Script, cursive;
   }
 
   .desktop\:font-thin {
