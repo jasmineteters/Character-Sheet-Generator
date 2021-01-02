@@ -1,36 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Character Sheet Generator</title>
+    <link rel="stylesheet" href="./public/css/dist.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Character Sheet Generator</title>
-  <link rel="stylesheet" href="./css/dist.css" />
-</head>
-
-<body class="bg-gradient-to-r from-red-500 to-red-800">
+  <body class="bg-gradient-to-r from-red-500 to-red-800">
   {{{ body }}}
-</body>
-<script>
-  const burger = document.querySelector('#burger');
-  const menu = document.querySelector('#menu');
-  const x = document.querySelector('#x');
+ </body>
+  <script>
+    const burger = document.querySelector('#burger');
+    const menu = document.querySelector('#menu');
+    const x = document.querySelector('#x');
+    const topCircle1 = document.querySelector('#topc1');
+    const topCircle2 = document.querySelector('#topc1');
+    const topCircle3 = document.querySelector('#topc1');
+    const bottomCircle1 = document.querySelector('#bottomc1');
+    const bottomCircle2 = document.querySelector('#bottomc2');
+    const bottomCircle3 = document.querySelector('#bottomc3');
 
-  burger.addEventListener('click', () => {
-    if (menu.classList.contains('hidden')) {
-      menu.classList.remove('hidden');
-      burger.classList.add('hidden');
-      x.classList.remove('hidden');
-    }
-  });
+    topc1.addEventListener('click', () => {
+      if (topc1.classList.contains('bg-green-700')) {
+        topc1.classList.remove('bg-green-700');
+        topc1.classList.add('bg-red-700');
+      } else {
+        topc1.classList.add('bg-green-700');
+      }
+    });
+    topc2.addEventListener('click', () => {
+      if (topc2.classList.contains('bg-green-700')) {
+        topc2.classList.remove('bg-green-700');
+        topc2.classList.add('bg-red-700');
+      } else {
+        topc2.classList.add('bg-green-700');
+      }
+    });
+    topc3.addEventListener('click', () => {
+      if (topc3.classList.contains('bg-green-700')) {
+        topc3.classList.remove('bg-green-700');
+        topc3.classList.add('bg-red-700');
+      } else {
+        topc3.classList.add('bg-green-700');
+      }
+    });
+    bottomc1.addEventListener('click', () => {
+      if (bottomc1.classList.contains('bg-green-700')) {
+        bottomc1.classList.remove('bg-green-700');
+        bottomc1.classList.add('bg-red-700');
+      } else {
+        bottomc1.classList.add('bg-green-700');
+      }
+    });
+    bottomc2.addEventListener('click', () => {
+      if (bottomc2.classList.contains('bg-green-700')) {
+        bottomc2.classList.remove('bg-green-700');
+        bottomc2.classList.add('bg-red-700');
+      } else {
+        bottomc2.classList.add('bg-green-700');
+      }
+    });
+    bottomc3.addEventListener('click', () => {
+      if (bottomc3.classList.contains('bg-green-700')) {
+        bottomc3.classList.remove('bg-green-700');
+        bottomc3.classList.add('bg-red-700');
+      } else {
+        bottomc3.classList.add('bg-green-700');
+      }
+    });
 
-  x.addEventListener('click', () => {
-    if (menu.classList != 'hidden') {
-      menu.classList.add('hidden');
-      burger.classList.remove('hidden');
-      x.classList.add('hidden');
-    }
-  });
-</script>
+    burger.addEventListener('click', () => {
+      if (menu.classList.contains('hidden')) {
+        menu.classList.remove('hidden');
+        burger.classList.add('hidden');
+        x.classList.remove('hidden');
+      }
+    });
 
+    x.addEventListener('click', () => {
+      if (menu.classList != 'hidden') {
+        menu.classList.add('hidden');
+        burger.classList.remove('hidden');
+        x.classList.add('hidden');
+      }
+    });
+  </script>
 </html>
