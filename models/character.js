@@ -113,7 +113,8 @@ Character.init({
     survival_value: { type: DataTypes.INTEGER },
 
     passive_perception: { type: DataTypes.INTEGER },
-
+    inspiration: { type: DataTypes.INTEGER},
+    
     //role play
     personality_traits: { type: DataTypes.STRING },
     ideals: { type: DataTypes.STRING },
@@ -143,6 +144,7 @@ Character.init({
     //list of stuff
     features: { type: DataTypes.STRING },
 
+    //spells
     spell_1: { type: DataTypes.STRING },
     spell_2: { type: DataTypes.STRING },
     spell_3: { type: DataTypes.STRING },
