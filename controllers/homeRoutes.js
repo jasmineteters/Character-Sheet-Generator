@@ -1,24 +1,10 @@
 const router = require('express').Router();
-const { character, User } = require('../models');
+const { Character, User } = require('../models');
 const withAuth = require('../utils/auth');
 
 router.get('/', async (req, res) => {
   try {
-    const characterData = await character.findAll({
-      include: [
-        {
-          model: User,
-          attributes: ['name'],
-        },
-      ],
-    });
-
-    const characters = characterData.map((character) =>
-      character.get({ plain: true }),
-    );
-
-    res.render('homepage', {
-      characters,
+    res.render('landingpage', {
       logged_in: req.session.logged_in,
     });
   } catch (err) {
@@ -28,7 +14,7 @@ router.get('/', async (req, res) => {
 
 router.get('/character/:id', async (req, res) => {
   try {
-    const characterData = await character.findByPk(req.params.id, {
+    const characterData = await Character.findByPk(req.params.id, {
       include: [
         {
           model: User,
@@ -70,7 +56,7 @@ router.get('/login', (req, res) => {
     return;
   }
 
-  res.render('login');
+  res.render('signin');
 });
 
 module.exports = router;
