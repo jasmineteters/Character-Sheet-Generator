@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        dnd: ['Kaushan Script', 'cursive'],
+        dnd: ['Kaushan\\ Script', 'cursive'],
       },
     },
     screens: {
