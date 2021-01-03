@@ -11213,7 +11213,7 @@ video {
 }
 
 .font-dnd {
-  font-family: Kaushan Script, cursive;
+  font-family: Kaushan\ Script, cursive;
 }
 
 .font-thin {
@@ -41831,7 +41831,7 @@ video {
   }
 
   .phone\:font-dnd {
-    font-family: Kaushan Script, cursive;
+    font-family: Kaushan\ Script, cursive;
   }
 
   .phone\:font-thin {
@@ -72369,7 +72369,7 @@ video {
   }
 
   .tablet\:font-dnd {
-    font-family: Kaushan Script, cursive;
+    font-family: Kaushan\ Script, cursive;
   }
 
   .tablet\:font-thin {
@@ -102907,7 +102907,7 @@ video {
   }
 
   .laptop\:font-dnd {
-    font-family: Kaushan Script, cursive;
+    font-family: Kaushan\ Script, cursive;
   }
 
   .laptop\:font-thin {
@@ -133445,7 +133445,7 @@ video {
   }
 
   .desktop\:font-dnd {
-    font-family: Kaushan Script, cursive;
+    font-family: Kaushan\ Script, cursive;
   }
 
   .desktop\:font-thin {
