@@ -1,4 +1,5 @@
     <!-- computer nav -->
+    
     <header id="opacity" class="bg-white rounded-b-sm p-4 shadow-2xl">
       <nav class="hidden laptop:flex justify-evenly">
         <div class="text-lg font-dnd text-2xl">
@@ -153,6 +154,7 @@
             type="text"
             name="characterName"
             class="block w-full p-3 mt-2 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner"
+            placeholder="{{name}}"
           />
         </span>
       </div>
@@ -168,6 +170,7 @@
             type="text"
             name="characterClass"
             class="block w-full p-3 mt-2 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner"
+            placeholder="{{character_class}}"
             
           />
           <label
@@ -180,6 +183,7 @@
             type="text"
             name="ancestry"
             class="block w-full p-3 mt-2 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner"
+            placeholder="{{ancestry}}"
           />
         </span>
       </div>
@@ -195,6 +199,7 @@
             type="text"
             name="background"
             class="block w-full p-3 mt-2 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner"
+            placeholder="{{background}}"
           />
           <label
             for="alignment"
@@ -206,6 +211,7 @@
             type="text"
             name="alignment"
             class="block w-full p-3 mt-2 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner"
+            placeholder="{{alignment}}"
           />
         </span>
       </div>
@@ -221,6 +227,7 @@
             type="text"
             name="playerName"
             class="block w-full p-3 mt-2 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner"
+            placeholder="{{user_id}}"
           />
           <label
             for="level"
@@ -232,6 +239,7 @@
             type="text"
             name="level"
             class="block w-full p-3 mt-2 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner"
+            placeholder="{{character_level}}"
           />
         </span>
       </div>
@@ -261,13 +269,15 @@
                 type="text"
                 name="strengthStat"
                 class="block w-4/5 p-3 mt-2 mr-1 text-gray-700 bg-gray-50 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner"
+                placeholder="{{strength}}"
   
               />
               <input
                 id="strength-mod"
                 type="text"
-                name="characterName"
+                name="strengthMod"
                 class="block w-4/5 p-3 mt-2 ml-1 text-gray-700 bg-gray-50 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner"
+                placeholder="{{strength_bonus}}"
   
               />
             </div>
@@ -284,6 +294,7 @@
                 type="text"
                 name="dexterityStat"
                 class="block w-4/5 p-3 mt-2 mr-1 text-gray-700 bg-gray-50 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner"
+                placeholder="{{dexterity}}"
   
               />
               <input
@@ -291,7 +302,7 @@
                 type="text"
                 name="dexterityMod"
                 class="block w-4/5 p-3 mt-2 ml-1 text-gray-700 bg-gray-50 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner"
-  
+                placeholder="{{dexterity_bonus}}"
               />
             </div>
           </div>
@@ -310,14 +321,14 @@
                 type="text"
                 name="constitutionStat"
                 class="block w-4/5 p-3 mt-2 mr-1 text-gray-700 bg-gray-50 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner"
-  
+                placeholder="{{constitution}}"
               />
               <input
                 id="constitution-mod"
                 type="text"
                 name="constitutionMod"
                 class="block w-4/5 p-3 mt-2 ml-1 text-gray-700 bg-gray-50 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner"
-  
+                placeholder="{{constitution_bonus}}"
               />
             </div>
           </div>
@@ -333,6 +344,7 @@
                 type="text"
                 name="intelligenceStat"
                 class="block w-4/5 p-3 mt-2 mr-1 text-gray-700 bg-gray-50 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner"
+                placeholder="{{intelligence}}"
   
               />
               <input
@@ -340,7 +352,7 @@
                 type="text"
                 name="intelligenceMod"
                 class="block w-4/5 p-3 mt-2 ml-1 text-gray-700 bg-gray-50 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner"
-  
+                placeholder="{{intelligence_bonus}}"
               />
             </div>
           </div>
@@ -358,14 +370,14 @@
                 type="text"
                 name="wisdomStat"
                 class="block w-4/5 p-3 mt-2 mr-1 text-gray-700 bg-gray-50 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner"
-  
+                placeholder="{{wisdom}}"
               />
               <input
                 id="wisdom-mod"
                 type="text"
                 name="wisdomMod"
                 class="block w-4/5 p-3 mt-2 ml-1 text-gray-700 bg-gray-50 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner"
-  
+                placeholder="{{wisdom_bonus}}"
               />
             </div>
           </div>
@@ -381,14 +393,14 @@
                 type="text"
                 name="charismaStat"
                 class="block w-4/5 p-3 mt-2 mr-1 text-gray-700 bg-gray-50 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner"
-  
+                placeholder="{{charism}}"
               />
               <input
                 id="charisma-mod"
                 type="text"
                 name="charismaMOd"
                 class="block w-4/5 p-3 mt-2 ml-1 text-gray-700 bg-gray-50 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner"
-  
+                placeholder="{{charism_bonus}}"
               />
             </div>
           </div>
@@ -414,7 +426,7 @@
               type="text"
               name="armorClass"
               class="block w-full p-3 mt-2 text-gray-700 bg-gray-50 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner"
-
+              placeholder="{{amor_class}}"
             />
           </div>
           <div class="bg-gray-200 mx-3 my-4 p-2 rounded-md shadow-2xl">
@@ -428,7 +440,7 @@
               type="text"
               name="initiative"
               class="block w-full p-3 mt-2 text-gray-700 bg-gray-50 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner"
-
+              placeholder="{{initiative}}"
             />
           </div>
           <div class="bg-gray-200 mx-3 my-4 p-2 rounded-md shadow-2xl">
@@ -442,7 +454,7 @@
               type="text"
               name="speed"
               class="block w-full p-3 mt-2 text-gray-700 bg-gray-50 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner"
-
+              placeholder="{{speed}}"
             />
           </div>
         </div>
@@ -459,7 +471,7 @@
               type="text"
               name="currentHP"
               class="block w-full p-3 mt-2 text-gray-700 bg-gray-50 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner"
-
+              placeholder="{{current_hp}}"
             />
           </div>
           <div class="bg-gray-200 mx-3 my-4 p-2 rounded-md shadow-2xl">
@@ -473,7 +485,7 @@
               type="text"
               name="maxHP"
               class="block w-full p-3 mt-2 text-gray-700 bg-gray-50 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner"
-
+              placeholder="{{max_hp}}"
             />
           </div>
         </div>
@@ -490,7 +502,7 @@
                 type="text"
                 name="hitDiceRemaining"
                 class="block w-1/3 p-3 m-2 text-gray-700 bg-gray-50 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner"
-  
+                placeholder="{{hit_dice_left}}"
               />
 
               <input
@@ -498,7 +510,7 @@
                 type="text"
                 name="hitDiceTotal"
                 class="block w-1/3 p-3 m-2 text-gray-700 bg-gray-50 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner"
-  
+                placeholder="{{hit_dice_total}}"
               />
             </div>
             <div class="flex justify-evenly">
@@ -568,6 +580,9 @@
                 id="inspiration"
                 type="checkbox"
                 class="form-checkbox h-5 w-5 text-gray-600"
+                {{#if inspiration}}
+                checked
+                {{/if}}
               /><span class="ml-2 text-gray-700">
                 <label
                   for="inspiration"
@@ -582,7 +597,7 @@
                 type="text"
                 name="proficiency"
                 class="block w-1/3 tablet:w-1/3 laptop:w-1/6 p-3 mt-2 mr-1 text-gray-700 bg-gray-50 appearance-none border-2 border-black border-opacity-30"
-  
+
               />
               <label
                 for="proficiency"
@@ -596,7 +611,7 @@
                 type="text"
                 name="passiveWisdom"
                 class="block w-1/3 tablet:w-1/3 laptop:w-1/6 p-3 mt-2 mr-1 text-gray-700 bg-gray-50 appearance-none border-2 border-black border-opacity-30"
-  
+                placeholder="{{passive_perception}}"
               />
               <label
                 for="passiveWisdom"
@@ -615,6 +630,9 @@
                 type="checkbox"
                 name="strengthSaveProficiency"
                 class="form-checkbox h-5 w-5 text-gray-600 mt-2"
+                {{#if inspiration}}
+                checked
+                {{/if}}
               /><span class="ml-2 text-gray-700"></span>
               <input
                 id="strength-save-stat"
@@ -635,12 +653,16 @@
                 type="checkbox"
                 name="dexteritySaveProficiency"
                 class="form-checkbox h-5 w-5 text-gray-600 mt-2"
+                {{#if inspiration}}
+                checked
+                {{/if}}
               /><span class="ml-2 text-gray-700"></span>
               <input
                 id="dexterity-save-stat"
                 type="text"
                 name="dexteritySaveStat"
                 class="block h-8 w-1/3 tablet:w-1/3 laptop:w-1/6 p-3 mt-2 mr-1 text-gray-700 bg-gray-50 appearance-none border-2 border-black border-opacity-30"
+                placeholder="{{passive_perception}}"
   
               />
               <label
@@ -655,13 +677,16 @@
                 type="checkbox"
                 name="constitutionSaveProficiency"
                 class="form-checkbox h-5 w-5 text-gray-600 mt-2"
+                {{#if inspiration}}
+                checked
+                {{/if}}
               /><span class="ml-2 text-gray-700"></span>
               <input
                 id="constitution-save-stat"
                 type="text"
                 name="constitutionSaveStat"
                 class="block h-8 w-1/3 tablet:w-1/3 laptop:w-1/6 p-3 mt-2 mr-1 text-gray-700 bg-gray-50 appearance-none border-2 border-black border-opacity-30"
-  
+                placeholder="{{passive_perception}}"
               />
               <label
                 for="constitutionSave"
@@ -675,13 +700,16 @@
                 type="checkbox"
                 name="intelligenceSaveProficiency"
                 class="form-checkbox h-5 w-5 text-gray-600 mt-2"
+                {{#if inspiration}}
+                checked
+                {{/if}}
               /><span class="ml-2 text-gray-700"></span>
               <input
                 id="intelligence-save-stat"
                 type="text"
                 name="intelligenceSaveStat"
                 class="block h-8 w-1/3 tablet:w-1/3 laptop:w-1/6 p-3 mt-2 mr-1 text-gray-700 bg-gray-50 appearance-none border-2 border-black border-opacity-30"
-  
+                placeholder="{{passive_perception}}"
               />
               <label
                 for="intelligenceSave"
@@ -695,13 +723,16 @@
                 type="checkbox"
                 name="wisdomSaveProficiency"
                 class="form-checkbox h-5 w-5 text-gray-600 mt-2"
+                {{#if inspiration}}
+                checked
+                {{/if}}
               /><span class="ml-2 text-gray-700"></span>
               <input
                 id="wisdom-save-stat"
                 type="text"
                 name="wisdomSaveStat"
                 class="block h-8 w-1/3 tablet:w-1/3 laptop:w-1/6 p-3 mt-2 mr-1 text-gray-700 bg-gray-50 appearance-none border-2 border-black border-opacity-30"
-  
+                placeholder="{{passive_perception}}"
               />
               <label
                 for="wisdomSave"
@@ -715,13 +746,16 @@
                 type="checkbox"
                 name="charismaSaveProficiency"
                 class="form-checkbox h-5 w-5 text-gray-600 mt-2"
+                {{#if inspiration}}
+                checked
+                {{/if}}
               /><span class="ml-2 text-gray-700"></span>
               <input
                 id="charisma-save-stat"
                 type="text"
                 name="charismaSaveStat"
                 class="block h-8 w-1/3 tablet:w-1/3 laptop:w-1/6 p-3 mt-2 mr-1 text-gray-700 bg-gray-50 appearance-none border-2 border-black border-opacity-30"
-  
+                placeholder="{{passive_perception}}"
               />
               <label
                 for="charismaSa"
@@ -748,13 +782,16 @@
                 type="checkbox"
                 name="acrobaticsProficiency"
                 class="form-checkbox h-5 w-5 text-gray-600 mt-2"
+                {{#if inspiration}}
+                checked
+                {{/if}}
               /><span class="ml-2 text-gray-700"></span>
               <input
                 id="acrobatics-stat"
                 type="text"
                 name="acrobaticsStat"
                 class="block h-8 w-1/3 tablet:w-1/3 laptop:w-1/6 p-3 mt-2 mr-1 text-gray-700 bg-gray-50 appearance-none border-2 border-black border-opacity-30"
-  
+                placeholder="{{acrobatics_value}}"
               />
               <label
                 for="acrobaticsSkill"
@@ -768,6 +805,9 @@
                 type="checkbox"
                 name="animalHandlingProficiency"
                 class="form-checkbox h-5 w-5 text-gray-600 mt-2"
+                {{#if inspiration}}
+                checked
+                {{/if}}
               /><span class="ml-2 text-gray-700"></span>
               <input
                 id="animal-handling-stat"
@@ -775,7 +815,7 @@
                 name="animalHandlingStat"
                 placeholder=""
                 class="block h-8 w-1/3 tablet:w-1/3 laptop:w-1/6 p-3 mt-2 mr-1 text-gray-700 bg-gray-50 appearance-none border-2 border-black border-opacity-30"
-  
+                placeholder="{{animal_handling_value}}"
               />
               <label
                 for="animalHandlingSkill"
@@ -789,13 +829,16 @@
                 type="checkbox"
                 name="arcanaProficiency"
                 class="form-checkbox h-5 w-5 text-gray-600 mt-2"
+                {{#if inspiration}}
+                checked
+                {{/if}}
               /><span class="ml-2 text-gray-700"></span>
               <input
                 id="arcana-stat"
                 type="text"
                 name="arcanaStat"
                 class="block h-8 w-1/3 tablet:w-1/3 laptop:w-1/6 p-3 mt-2 mr-1 text-gray-700 bg-gray-50 appearance-none border-2 border-black border-opacity-30"
-  
+                placeholder="{{arcana_value}}"
               />
               <label
                 for="arcanaSkill"
@@ -809,13 +852,16 @@
                 type="checkbox"
                 name="athleticsProficiency"
                 class="form-checkbox h-5 w-5 text-gray-600 mt-2"
+                {{#if inspiration}}
+                checked
+                {{/if}}
               /><span class="ml-2 text-gray-700"></span>
               <input
                 id="athletics-stat"
                 type="text"
                 name="athleticsStat"
                 class="block h-8 w-1/3 tablet:w-1/3 laptop:w-1/6 p-3 mt-2 mr-1 text-gray-700 bg-gray-50 appearance-none border-2 border-black border-opacity-30"
-  
+                placeholder="{{athletics_value}}"
               />
               <label
                 for="athleticsSkill"
@@ -829,13 +875,16 @@
                 type="checkbox"
                 name="deceptionProficiency"
                 class="form-checkbox h-5 w-5 text-gray-600 mt-2"
+                {{#if inspiration}}
+                checked
+                {{/if}}
               /><span class="ml-2 text-gray-700"></span>
               <input
                 id="deception-stat"
                 type="text"
                 name="deceptionStat"
                 class="block h-8 w-1/3 tablet:w-1/3 laptop:w-1/6 p-3 mt-2 mr-1 text-gray-700 bg-gray-50 appearance-none border-2 border-black border-opacity-30"
-  
+                placeholder="{{deception_value}}"
               />
               <label
                 for="deceptionSkill"
@@ -849,13 +898,16 @@
                 type="checkbox"
                 name="historyProficiency"
                 class="form-checkbox h-5 w-5 text-gray-600 mt-2"
+                {{#if inspiration}}
+                checked
+                {{/if}}
               /><span class="ml-2 text-gray-700"></span>
               <input
                 id="history-stat"
                 type="text"
                 name="historyStat"
                 class="block h-8 w-1/3 tablet:w-1/3 laptop:w-1/6 p-3 mt-2 mr-1 text-gray-700 bg-gray-50 appearance-none border-2 border-black border-opacity-30"
-  
+                placeholder="{{history_value}}"
               />
               <label
                 for="historySkill"
@@ -873,13 +925,16 @@
                 type="checkbox"
                 name="insightProficiency"
                 class="form-checkbox h-5 w-5 text-gray-600 mt-2"
+                {{#if inspiration}}
+                checked
+                {{/if}}
               /><span class="ml-2 text-gray-700"></span>
               <input
                 id="insight-stat"
                 type="text"
                 name="insightStat"
                 class="block h-8 w-1/3 tablet:w-1/3 laptop:w-1/6 p-3 mt-2 mr-1 text-gray-700 bg-gray-50 appearance-none border-2 border-black border-opacity-30"
-  
+                placeholder="{{insight_value}}"
               />
               <label
                 for="insightSkill"
@@ -893,13 +948,16 @@
                 type="checkbox"
                 name="intimidationProficiency"
                 class="form-checkbox h-5 w-5 text-gray-600 mt-2"
+                {{#if inspiration}}
+                checked
+                {{/if}}
               /><span class="ml-2 text-gray-700"></span>
               <input
                 id="intimidation-stat"
                 type="text"
                 name="intimidationStat"
                 class="block h-8 w-1/3 tablet:w-1/3 laptop:w-1/6 p-3 mt-2 mr-1 text-gray-700 bg-gray-50 appearance-none border-2 border-black border-opacity-30"
-  
+                placeholder="{{intimidation_value}}"
               />
               <label
                 for="intimidationSkill"
@@ -913,13 +971,16 @@
                 type="checkbox"
                 name="investigationProficiency"
                 class="form-checkbox h-5 w-5 text-gray-600 mt-2"
+                {{#if inspiration}}
+                checked
+                {{/if}}
               /><span class="ml-2 text-gray-700"></span>
               <input
                 id="investigation-stat"
                 type="text"
                 name="investigationStat"
                 class="block h-8 w-1/3 tablet:w-1/3 laptop:w-1/6 p-3 mt-2 mr-1 text-gray-700 bg-gray-50 appearance-none border-2 border-black border-opacity-30"
-  
+                placeholder="{{investigation_value}}"
               />
               <label
                 for="investigationSkill"
@@ -933,13 +994,16 @@
                 type="checkbox"
                 name="medicineProficiency"
                 class="form-checkbox h-5 w-5 text-gray-600 mt-2"
+                {{#if inspiration}}
+                checked
+                {{/if}}
               /><span class="ml-2 text-gray-700"></span>
               <input
                 id="medicine-stat"
                 type="text"
                 name="medicineStat"
                 class="block h-8 w-1/3 tablet:w-1/3 laptop:w-1/6 p-3 mt-2 mr-1 text-gray-700 bg-gray-50 appearance-none border-2 border-black border-opacity-30"
-  
+                placeholder="{{medicine_value}}"
               />
               <label
                 for="medicineSkill"
@@ -953,13 +1017,16 @@
                 type="checkbox"
                 name="natureProficiency"
                 class="form-checkbox h-5 w-5 text-gray-600 mt-2"
+                {{#if inspiration}}
+                checked
+                {{/if}}
               /><span class="ml-2 text-gray-700"></span>
               <input
                 id="nature-stat"
                 type="text"
                 name="natureStat"
                 class="block h-8 w-1/3 tablet:w-1/3 laptop:w-1/6 p-3 mt-2 mr-1 text-gray-700 bg-gray-50 appearance-none border-2 border-black border-opacity-30"
-  
+                placeholder="{{nature_value}}"
               />
               <label
                 for="natureSkill"
@@ -973,13 +1040,16 @@
                 type="checkbox"
                 name="perceptionProficiency"
                 class="form-checkbox h-5 w-5 text-gray-600 mt-2"
+                {{#if inspiration}}
+                checked
+                {{/if}}
               /><span class="ml-2 text-gray-700"></span>
               <input
                 id="perception-stat"
                 type="text"
                 name="perceptionStat"
                 class="block h-8 w-1/3 tablet:w-1/3 laptop:w-1/6 p-3 mt-2 mr-1 text-gray-700 bg-gray-50 appearance-none border-2 border-black border-opacity-30"
-  
+                placeholder="{{perception_value}}"
               />
               <label
                 for="perceptionSkill"
@@ -999,13 +1069,16 @@
                 type="checkbox"
                 name="performanceProficiency"
                 class="form-checkbox h-5 w-5 text-gray-600 mt-2"
+                {{#if inspiration}}
+                checked
+                {{/if}}
               /><span class="ml-2 text-gray-700"></span>
               <input
                 id="performance-stat"
                 type="text"
                 name="performanceStat"
                 class="block h-8 w-1/3 tablet:w-1/3 laptop:w-1/6 p-3 mt-2 mr-1 text-gray-700 bg-gray-50 appearance-none border-2 border-black border-opacity-30"
-  
+                placeholder="{{inspiration_value}}"
               />
               <label
                 for="performanceSkill"
@@ -1019,13 +1092,16 @@
                 type="checkbox"
                 name="persuasionProficiency"
                 class="form-checkbox h-5 w-5 text-gray-600 mt-2"
+                {{#if inspiration}}
+                checked
+                {{/if}}
               /><span class="ml-2 text-gray-700"></span>
               <input
                 id="persuasion-stat"
                 type="text"
                 name="persuasionStat"
                 class="block h-8 w-1/3 tablet:w-1/3 laptop:w-1/6 p-3 mt-2 mr-1 text-gray-700 bg-gray-50 appearance-none border-2 border-black border-opacity-30"
-  
+                placeholder="{{persuasion_value}}"
               />
               <label
                 for="persuasionSkill"
@@ -1039,13 +1115,16 @@
                 type="checkbox"
                 name="religionProficiency"
                 class="form-checkbox h-5 w-5 text-gray-600 mt-2"
+                {{#if inspiration}}
+                checked
+                {{/if}}
               /><span class="ml-2 text-gray-700"></span>
               <input
                 id="religion-stat"
                 type="text"
                 name="religionStat"
                 class="block h-8 w-1/3 tablet:w-1/3 laptop:w-1/6 p-3 mt-2 mr-1 text-gray-700 bg-gray-50 appearance-none border-2 border-black border-opacity-30"
-  
+                placeholder="{{religion_value}}"
               />
               <label
                 for="religionSkill"
@@ -1059,13 +1138,16 @@
                 type="checkbox"
                 name="slightOfHandProficiency"
                 class="form-checkbox h-5 w-5 text-gray-600 mt-2"
+                {{#if inspiration}}
+                checked
+                {{/if}}
               /><span class="ml-2 text-gray-700"></span>
               <input
                 id="slight-of-hand-stat"
                 type="text"
                 name="slightOfHandStat"
                 class="block h-8 w-1/3 tablet:w-1/3 laptop:w-1/6 p-3 mt-2 mr-1 text-gray-700 bg-gray-50 appearance-none border-2 border-black border-opacity-30"
-  
+                placeholder="{{slight_of_hand_value}}"
               />
               <label
                 for="slightOfHandSkill"
@@ -1079,13 +1161,16 @@
                 type="checkbox"
                 name="stealthProficiency"
                 class="form-checkbox h-5 w-5 text-gray-600 mt-2"
+                {{#if inspiration}}
+                checked
+                {{/if}}
               /><span class="ml-2 text-gray-700"></span>
               <input
                 id="stealth-stat"
                 type="text"
                 name="stealthStat"
                 class="block h-8 w-1/3 tablet:w-1/3 laptop:w-1/6 p-3 mt-2 mr-1 text-gray-700 bg-gray-50 appearance-none border-2 border-black border-opacity-30"
-  
+                placeholder="{{stealth_value}}"
               />
               <label
                 for="stealthSkill"
@@ -1099,13 +1184,16 @@
                 type="checkbox"
                 name="survivalProficiency"
                 class="form-checkbox h-5 w-5 text-gray-600 mt-2"
+                {{#if inspiration}}
+                checked
+                {{/if}}
               /><span class="ml-2 text-gray-700"></span>
               <input
                 id="survival-stat"
                 type="text"
                 name="survivalStat"
                 class="block h-8 w-1/3 tablet:w-1/3 laptop:w-1/6 p-3 mt-2 mr-1 text-gray-700 bg-gray-50 appearance-none border-2 border-black border-opacity-30"
-  
+                placeholder="{{survival_value}}"
               />
               <label
                 for="survivalSkill"
@@ -1136,7 +1224,7 @@
               type="textarea"
               name="attack1Name"
               class="block w-full p-3 mt-2 text-gray-700 bg-gray-50 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner"
-
+              placeholder="{{attack_name_1}}"
             />
           </div>
           <div class="bg-gray-200 mx-3 my-4 p-2 rounded-md shadow-2xl">
@@ -1150,7 +1238,7 @@
               type="text"
               name="strength1"
               class="block w-full p-3 mt-2 text-gray-700 bg-gray-50 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner"
-
+              placeholder="{{attack_strength_1}}"
             />
           </div>
           <div class="bg-gray-200 mx-3 my-4 p-2 rounded-md shadow-2xl">
@@ -1164,7 +1252,7 @@
               type="text"
               name="damage1"
               class="block w-full p-3 mt-2 text-gray-700 bg-gray-50 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner"
-
+              placeholder="{{attack_damage_1}}"
             />
           </div>
         </div>
@@ -1181,7 +1269,7 @@
               type="textarea"
               name="attack2Name"
               class="block w-full p-3 mt-2 text-gray-700 bg-gray-50 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner"
-
+              placeholder="{{attack_name_2}}"  
             />
           </div>
           <div class="bg-gray-200 mx-3 my-4 p-2 rounded-md shadow-2xl">
@@ -1195,7 +1283,7 @@
               type="text"
               name="strength2"
               class="block w-full p-3 mt-2 text-gray-700 bg-gray-50 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner"
-
+              placeholder="{{attack_strength_2}}"
             />
           </div>
           <div class="bg-gray-200 mx-3 my-4 p-2 rounded-md shadow-2xl">
@@ -1209,7 +1297,7 @@
               type="text"
               name="damage2"
               class="block w-full p-3 mt-2 text-gray-700 bg-gray-50 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner"
-
+              placeholder="{{attack_damage_2}}"
             />
           </div>
         </div>
@@ -1226,7 +1314,7 @@
               type="textarea"
               name="attack3Name"
               class="block w-full p-3 mt-2 text-gray-700 bg-gray-50 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner"
-
+              placeholder="{{attack_name_3}}"
             />
           </div>
           <div class="bg-gray-200 mx-3 my-4 p-2 rounded-md shadow-2xl">
@@ -1240,7 +1328,7 @@
               type="text"
               name="strength3"
               class="block w-full p-3 mt-2 text-gray-700 bg-gray-50 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner"
-
+              placeholder="{{attack_strength_3}}"
             />
           </div>
           <div class="bg-gray-200 mx-3 my-4 p-2 rounded-md shadow-2xl">
@@ -1254,7 +1342,7 @@
               type="text"
               name="damage3"
               class="block w-full p-3 mt-2 text-gray-700 bg-gray-50 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner"
-
+              placeholder="{{attack_damage_3}}"
             />
           </div>
         </div>
@@ -1264,14 +1352,15 @@
             <label
               for="spell1"
               class="block text-xs font-semibold text-gray-600 uppercase mt-2 text-center"
-              >Spell</label
+              >Spell
+              </label
             >
             <input
               id="spell1"
               type="text"
               name="spell1"
               class="block w-full p-3 mt-2 text-gray-700 bg-gray-50 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner"
-
+              placeholder="{{spell_1}}"
             />
           </div>
         </div>
@@ -1287,7 +1376,7 @@
               type="text"
               name="spell2"
               class="block w-full p-3 mt-2 text-gray-700 bg-gray-50 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner"
-
+              placeholder="{{spell_2}}"
             />
           </div>
         </div>
@@ -1303,7 +1392,7 @@
               type="text"
               name="spell3"
               class="block w-full p-3 mt-2 text-gray-700 bg-gray-50 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner"
-
+              placeholder="{{spell_3}}"
             />
           </div>
         </div>
@@ -1319,7 +1408,7 @@
               type="text"
               name="spell4"
               class="block w-full p-3 mt-2 text-gray-700 bg-gray-50 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner"
-
+              placeholder="{{spell_4}}"
             />
           </div>
         </div>
@@ -1335,7 +1424,7 @@
               type="text"
               name="spell5"
               class="block w-full p-3 mt-2 text-gray-700 bg-gray-50 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner"
-
+              placeholder="{{spell_5}}"
             />
           </div>
         </div>
@@ -1365,7 +1454,7 @@
               type="text"
               name="personalityTraits"
               class="block w-full p-3 mt-2 text-gray-700 bg-gray-50 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner"
-
+              placeholder="{{personality_traits}}"
             ></textarea>
           </div>
           <div
@@ -1381,7 +1470,7 @@
               type="text"
               name="ideals"
               class="block w-full p-3 mt-2 text-gray-700 bg-gray-50 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner"
-
+              placeholder="{{ideals}}"
             ></textarea>
           </div>
           <div
@@ -1397,7 +1486,7 @@
               type="text"
               name="bonds"
               class="block w-full p-3 mt-2 text-gray-700 bg-gray-50 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner"
-
+              placeholder="{{bonds}}"
             ></textarea>
           </div>
           <div
@@ -1413,7 +1502,7 @@
               type="text"
               name="flaws"
               class="block w-full p-3 mt-2 text-gray-700 bg-gray-50 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner"
-
+              placeholder="{{flaws}}"
             ></textarea>
           </div>
         </div>
@@ -1431,7 +1520,7 @@
               type="text"
               name="equipment"
               class="block w-full h-60 p-3 mt-2 text-gray-700 bg-gray-50 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner"
-
+              placeholder="{{equipment}}"
             ></textarea>
           </div>
           <div
@@ -1447,7 +1536,7 @@
               type="text"
               name="otherProficienciesAndLanguages"
               class="block w-full h-60 p-3 mt-2 text-gray-700 bg-gray-50 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner"
-
+              placeholder="{{proficiencies}}"
             ></textarea>
           </div>
           <div
@@ -1463,7 +1552,7 @@
               type="text"
               name="featuresAndTraits"
               class="block w-full h-60 p-3 mt-2 text-gray-700 bg-gray-50 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner"
-
+              placeholder="{{features}}"
             ></textarea>
           </div>
         </div>
