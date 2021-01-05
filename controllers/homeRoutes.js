@@ -18,14 +18,14 @@ router.get('/character/:id', async (req, res) => {
       include: [
         {
           model: User,
-          attributes: ['name'],
+          attributes: [ "first_name", "last_name" ],
         },
       ],
     });
 
     const character = characterData.get({ plain: true });
 
-    res.render('character', {
+    res.render('charactersheet', {
       ...character,
       logged_in: req.session.logged_in,
     });
