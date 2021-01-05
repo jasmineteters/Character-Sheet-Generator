@@ -12,6 +12,16 @@ router.get('/', async (req, res) => {
   }
 });
 
+router.get('/character', async (req, res) => {
+  try {
+    res.render('charactersheet', {
+      logged_in: req.session.logged_in,
+    });
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
 router.get('/character/:id', async (req, res) => {
   try {
     const characterData = await Character.findByPk(req.params.id, {
@@ -25,7 +35,7 @@ router.get('/character/:id', async (req, res) => {
 
     const character = characterData.get({ plain: true });
 
-    res.render('character', {
+    res.render('charactersheet', {
       ...character,
       logged_in: req.session.logged_in,
     });
