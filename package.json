@@ -22,7 +22,7 @@
     "prettier": "^2.2.1"
   },
   "scripts": {
-    "build": "tailwindcss-cli@latest build ./css/style.css -o ./css/dist.css"
+    "build": "npx tailwindcss-cli@latest build ./public/css/style.css -o ./public/css/dist.css"
   },
   "repository": {
     "type": "git",
