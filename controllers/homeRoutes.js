@@ -38,10 +38,10 @@ router.get('/profile', withAuth, async (req, res) => {
   try {
     const userData = await User.findByPk(req.session.user_id, {
       attributes: { exclude: ['password'] },
-      include: [{ model: character }],
+      include: [{ model: Character }],
     });
     const user = userData.get({ plain: true });
-    res.render('profile', {
+    res.render('users', {
       ...user,
       logged_in: true,
     });
