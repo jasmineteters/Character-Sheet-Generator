@@ -89,7 +89,7 @@ Character.init(
       insight: { type: DataTypes.BOOLEAN },
       insight_value: { type: DataTypes.INTEGER, defaultValue: 0 },
       intimidation: { type: DataTypes.BOOLEAN },
-      intimidation: { type: DataTypes.INTEGER, defaultValue: 0 },
+      intimidation_value: { type: DataTypes.INTEGER, defaultValue: 0 },
       investigation: { type: DataTypes.BOOLEAN },
       investigation_value: { type: DataTypes.INTEGER, defaultValue: 0 },
       medicine: { type: DataTypes.BOOLEAN },
