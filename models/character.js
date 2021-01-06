@@ -17,6 +17,7 @@ Character.init(
         model: 'user',
         key: 'id',
       },
+      },
       date_created: {
         type: DataTypes.DATE,
         allowNull: false,
@@ -152,13 +153,13 @@ Character.init(
       spell_4: { type: DataTypes.STRING },
       spell_5: { type: DataTypes.STRING },
     },
-  },
+  
   {
     sequelize,
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'entry',
+    modelName: 'character',
   },
 );
 
