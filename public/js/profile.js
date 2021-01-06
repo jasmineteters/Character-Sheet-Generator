@@ -1,6 +1,4 @@
 
-
-
 const notePadHandler = async (event) => {
   event.preventDefault();
   const notePad = document.querySelector('#notepad').value.trim();

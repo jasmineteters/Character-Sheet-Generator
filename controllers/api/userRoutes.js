@@ -65,16 +65,16 @@ router.post('/notes', withAuth, async (req, res) => {
   try {
     const updateUser = await User.update(
       {
-        notes: req.body.notes,
+        notes: req.body.notePad,
       },
       {
       where: {
-        id: req.session.id,
+        id: req.session.user_id,
       }
     }
     )
     res.status(200).json(updateUser);
-  } catch (error) {
+  } catch (err) {
     res.status(400).json(err);
   }
 })
