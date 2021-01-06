@@ -1,7 +1,7 @@
 // for yuzani
 const router = require('express').Router();
 const { User } = require('../../models');
-const withAuth = require('../../utils/auth');
+const withAuth = require( '../../utils/auth' );
 
 router.post('/', async (req, res) => {
   try {
@@ -62,7 +62,6 @@ router.post('/logout', (req, res) => {
 });
 
 router.post('/notes', withAuth, async (req, res) => {
-  console.log(req.body.notePad);
   try {
     const updateUser = await User.update(
       {
