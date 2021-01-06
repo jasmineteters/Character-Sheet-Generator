@@ -55,12 +55,9 @@ Character.init(
       //health
       max_hp: { type: DataTypes.INTEGER },
       current_hp: { type: DataTypes.INTEGER },
-      temp_hp: { type: DataTypes.INTEGER },
-      hit_dice_type: { type: DataTypes.INTEGER },
       hit_dice_total: { type: DataTypes.INTEGER },
       hit_dice_left: { type: DataTypes.INTEGER },
-      death_save_successes: { type: DataTypes.INTEGER },
-      death_save_failures: { type: DataTypes.INTEGER },
+      
 
       //saving throws
       str_save: { type: DataTypes.BOOLEAN },
@@ -92,7 +89,7 @@ Character.init(
       insight: { type: DataTypes.BOOLEAN },
       insight_value: { type: DataTypes.INTEGER },
       intimidation: { type: DataTypes.BOOLEAN },
-      intimidation_value: { type: DataTypes.INTEGER },
+      intimidation: { type: DataTypes.INTEGER },
       investigation: { type: DataTypes.BOOLEAN },
       investigation_value: { type: DataTypes.INTEGER },
       medicine: { type: DataTypes.BOOLEAN },
@@ -126,22 +123,21 @@ Character.init(
       //attacks
       attack_name_1: { type: DataTypes.STRING },
       attack_damage_1: { type: DataTypes.INTEGER },
-      attack_type_1: { type: DataTypes.STRING },
+      attack_strength_1: { type: DataTypes.STRING },
 
       attack_name_2: { type: DataTypes.STRING },
       attack_damage_2: { type: DataTypes.INTEGER },
-      attack_type_2: { type: DataTypes.STRING },
+      attack_strength_2: { type: DataTypes.STRING },
 
       attack_name_3: { type: DataTypes.STRING },
       attack_damage_3: { type: DataTypes.INTEGER },
-      attack_type_3: { type: DataTypes.STRING },
+      attack_strength_3: { type: DataTypes.STRING },
 
       //list of stuff
       proficiencies: { type: DataTypes.STRING },
 
       //list of stuff
       equipment: { type: DataTypes.STRING },
-      money: { type: DataTypes.STRING },
 
       //list of stuff
       features: { type: DataTypes.STRING },
