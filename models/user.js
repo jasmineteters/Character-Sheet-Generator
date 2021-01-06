@@ -37,7 +37,7 @@ User.init(
         len: [8],
       },
     },
-    bio: {
+    notes: {
       type: DataTypes.STRING,
     },
   },
