@@ -1,7 +1,8 @@
 const saveButton = document.querySelector('.save-button');
 
 saveButton.addEventListener('click', saveButtonHandler);
-async function saveButtonHandler() {
+
+async function saveButtonHandler(event) {
   const name = document.querySelector('#character-name').value.trim();
   const character_class = document.querySelector('#class').value.trim();
   const character_level = document.querySelector('#level').value.trim();
@@ -9,6 +10,7 @@ async function saveButtonHandler() {
   const ancestry = document.querySelector('#ancestry').value.trim();
   const alignment = document.querySelector('#alignment').value.trim();
   const proficiency_bonus = document.querySelector('#proficiency').value.trim();
+  const player_name = document.querySelector('#player-name').value.trim();
   const strength = document.querySelector('#strength-stat').value.trim();
   const strength_bonus = document.querySelector('#strength-mod').value.trim();
   const dexterity = document.querySelector('#dexterity-stat').value.trim();
@@ -39,122 +41,122 @@ async function saveButtonHandler() {
   const hit_dice_left = document
     .querySelector('#hit-dice-remaining')
     .value.trim();
-  const str_save = document
+  const str_save = booleanFixer(document
     .querySelector('#strength-save-proficiency')
-    .value.trim();
+    .value.trim());
   const str_save_value = document
     .querySelector('#strength-save-stat')
     .value.trim();
-  const dex_save = document
+  const dex_save = booleanFixer(document
     .querySelector('#dexterity-save-proficiency')
-    .value.trim();
+    .value.trim());
   const dex_save_value = document
     .querySelector('#dexterity-save-stat')
     .value.trim();
-  const con_save = document
+  const con_save = booleanFixer(document
     .querySelector('#constitution-save-proficiency')
-    .value.trim();
+    .value.trim());
   const con_save_value = document
     .querySelector('#constitution-save-stat')
     .value.trim();
-  const int_save = document
+  const int_save = booleanFixer(document
     .querySelector('#intelligence-save-proficiency')
-    .value.trim();
+    .value.trim());
   const int_save_value = document
     .querySelector('#intelligence-save-stat')
     .value.trim();
-  const wis_save = document
+  const wis_save = booleanFixer(document
     .querySelector('#wisdom-save-proficiency')
-    .value.trim();
+    .value.trim());
   const wis_save_value = document
     .querySelector('#wisdom-save-stat')
     .value.trim();
-  const cha_save = document
+  const cha_save = booleanFixer(document
     .querySelector('#charisma-save-proficiency')
-    .value.trim();
+    .value.trim());
   const cha_save_value = document
     .querySelector('#charisma-save-stat')
     .value.trim();
-  const acrobatics = document
+  const acrobatics = booleanFixer(document
     .querySelector('#acrobatics-proficiency')
-    .value.trim();
+    .value.trim());
   const acrobatics_value = document
     .querySelector('#acrobatics-stat')
     .value.trim();
-  const animal_handling = document
+  const animal_handling = booleanFixer(document
     .querySelector('#animal-handling-proficiency')
-    .value.trim();
+    .value.trim());
   const animal_handling_value = document
     .querySelector('#animal-handling-stat')
     .value.trim();
-  const arcana = document.querySelector('#arcana-proficiency').value.trim();
+  const arcana = booleanFixer(document.querySelector('#arcana-proficiency').value.trim());
   const arcana_value = document.querySelector('#arcana-stat').value.trim();
-  const athletics = document
+  const athletics = booleanFixer(document
     .querySelector('#athletics-proficiency')
-    .value.trim();
+    .value.trim());
   const athletics_value = document
     .querySelector('#athletics-stat')
     .value.trim();
-  const deception = document
+  const deception = booleanFixer(document
     .querySelector('#deception-proficiency')
-    .value.trim();
+    .value.trim());
   const deception_value = document
     .querySelector('#deception-stat')
     .value.trim();
-  const history = document.querySelector('#history-proficiency').value.trim();
+  const history = booleanFixer(document.querySelector('#history-proficiency').value.trim());
   const history_value = document.querySelector('#history-stat').value.trim();
-  const insight = document.querySelector('#insight-proficiency').value.trim();
+  const insight = booleanFixer(document.querySelector('#insight-proficiency').value.trim());
   const insight_value = document.querySelector('#insight-stat').value.trim();
-  const intimidation = document
+  const intimidation = booleanFixer(document
     .querySelector('#intimidation-proficiency')
-    .value.trim();
+    .value.trim());
   const intimidation_value = document
     .querySelector('#intimidation-stat')
     .value.trim();
-  const investigation = document
+  const investigation = booleanFixer(document
     .querySelector('#investigation-proficiency')
-    .value.trim();
+    .value.trim());
   const investigation_value = document
     .querySelector('#investigation-stat')
     .value.trim();
-  const medicine = document.querySelector('#medicine-proficiency').value.trim();
+  const medicine = booleanFixer(document.querySelector('#medicine-proficiency').value.trim());
   const medicine_value = document.querySelector('#medicine-stat').value.trim();
-  const nature = document.querySelector('#nature-proficiency').value.trim();
+  const nature = booleanFixer(document.querySelector('#nature-proficiency').value.trim());
   const nature_value = document.querySelector('#nature-stat').value.trim();
-  const perception = document
+  const perception = booleanFixer(document
     .querySelector('#perception-proficiency')
-    .value.trim();
+    .value.trim());
   const perception_value = document
     .querySelector('#perception-stat')
     .value.trim();
-  const performance = document
+  const performance = booleanFixer(document
     .querySelector('#performance-proficiency')
-    .value.trim();
+    .value.trim());
   const performance_value = document
     .querySelector('#performance-stat')
     .value.trim();
-  const persuasion = document
+  const persuasion = booleanFixer(document
     .querySelector('#persuasion-proficiency')
-    .value.trim();
+    .value.trim());
   const persuasion_value = document
     .querySelector('#persuasion-stat')
     .value.trim();
-  const religion = document.querySelector('#religion-proficiency').value.trim();
+  const religion = booleanFixer(document.querySelector('#religion-proficiency').value.trim());
   const religion_value = document.querySelector('#religion-stat').value.trim();
-  const sleight_of_hand = document
+  const sleight_of_hand = booleanFixer(document
     .querySelector('#slight-of-hand-proficiency')
-    .value.trim();
+    .value.trim());
   const sleight_of_hand_value = document
     .querySelector('#slight-of-hand-stat')
     .value.trim();
-  const stealth = document.querySelector('#stealth-proficiency').value.trim();
+  const stealth = booleanFixer(document.querySelector('#stealth-proficiency').value.trim());
   const stealth_value = document.querySelector('#stealth-stat').value.trim();
-  const survival = document.querySelector('#survival-proficiency').value.trim();
+  const survival = booleanFixer(document.querySelector('#survival-proficiency').value.trim());
   const survival_value = document.querySelector('#survival-stat').value.trim();
   const passive_perception = document
     .querySelector('#passive-wisdom')
     .value.trim();
-  const inspiration = document.querySelector('#inspiration').value.trim();
+  const inspiration = booleanFixer(document.querySelector('#inspiration').value.trim());
   const personality_traits = document
     .querySelector('#personality-traits')
     .value.trim();
@@ -181,6 +183,15 @@ async function saveButtonHandler() {
   const spell_4 = document.querySelector('#spell4').value.trim();
   const spell_5 = document.querySelector('#spell5').value.trim();
 
+  function booleanFixer(param) {
+    if (param){
+    return 1
+    } else{
+    return 0
+    }
+  }
+
+
   if (name) {
     const response = await fetch('/api/character', {
       method: 'POST',
@@ -192,6 +203,7 @@ async function saveButtonHandler() {
         ancestry,
         alignment,
         proficiency_bonus,
+        player_name,
         strength,
         strength_bonus,
         dexterity,
@@ -211,56 +223,56 @@ async function saveButtonHandler() {
         current_hp,
         hit_dice_total,
         hit_dice_left,
-        // str_save,
+        str_save,
         str_save_value,
-        // dex_save,
+        dex_save,
         dex_save_value,
-        // con_save,
+        con_save,
         con_save_value,
-        // int_save,
+        int_save,
         int_save_value,
-        // wis_save,
+        wis_save,
         wis_save_value,
-        // cha_save,
+        cha_save,
         cha_save_value,
-        // acrobatics,
+        acrobatics,
         acrobatics_value,
-        // animal_handling,
+        animal_handling,
         animal_handling_value,
-        // arcana,
+        arcana,
         arcana_value,
-        // athletics,
+        athletics,
         athletics_value,
-        // deception,
+        deception,
         deception_value,
-        // history,
+        history,
         history_value,
-        // insight,
+        insight,
         insight_value,
-        // intimidation,
+        intimidation,
         intimidation_value,
-        // investigation,
+        investigation,
         investigation_value,
-        // medicine,
+        medicine,
         medicine_value,
-        // nature,
+        nature,
         nature_value,
-        // perception,
+        perception,
         perception_value,
-        // performance,
+        performance,
         performance_value,
-        // persuasion,
+        persuasion,
         persuasion_value,
-        // religion,
+        religion,
         religion_value,
-        // sleight_of_hand,
+        sleight_of_hand,
         sleight_of_hand_value,
-        // stealth,
+        stealth,
         stealth_value,
-        // survival,
+        survival,
         survival_value,
         passive_perception,
-        // inspiration,
+        inspiration,
         personality_traits,
         ideals,
         bonds,
@@ -288,7 +300,6 @@ async function saveButtonHandler() {
       },
     });
     if (response.ok) {
-      console.log(response);
       document.location.replace('/profile');
     } else {
       console.log(response);
