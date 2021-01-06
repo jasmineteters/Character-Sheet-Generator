@@ -12,13 +12,23 @@ router.get('/', async (req, res) => {
   }
 });
 
+router.get('/character', async (req, res) => {
+  try {
+    res.render('charactersheet', {
+      logged_in: req.session.logged_in,
+    });
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
 router.get('/character/:id', async (req, res) => {
   try {
     const characterData = await Character.findByPk(req.params.id, {
       include: [
         {
           model: User,
-          attributes: [ "first_name", "last_name" ],
+          attributes: ["first_name", "last_name"],
         },
       ],
     });
