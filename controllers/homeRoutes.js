@@ -26,7 +26,7 @@ router.get('/character/:id', async (req, res) => {
     const character = characterData.get({ plain: true });
 
     res.render('charactersheet', {
-      ...character,
+      // ...character,
       logged_in: req.session.logged_in,
     });
   } catch (err) {

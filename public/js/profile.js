@@ -10,9 +10,9 @@ const newCharacterHandler = async (event) => {
 
   
     
-    const response = await fetch(`/api/character` , {
+    const response = await fetch(`/api/character/` , {
         method: "POST",
-        // body: JSON.stringify({ title, body }),
+        body: JSON.stringify({}),
         headers: {
         "Content-Type": "application/json",
         },

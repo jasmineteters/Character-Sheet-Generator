@@ -22,9 +22,9 @@ Character.init(
         allowNull: false,
         defaultValue: DataTypes.NOW,
       },
-
+    },
       //header
-      name: { type: DataTypes.STRING, allowNull: false },
+      name: { type: DataTypes.STRING },
       character_class: { type: DataTypes.STRING },
       character_level: { type: DataTypes.INTEGER },
       background: { type: DataTypes.STRING },
@@ -152,14 +152,14 @@ Character.init(
       spell_4: { type: DataTypes.STRING },
       spell_5: { type: DataTypes.STRING },
     },
-  },
-  {
+{
     sequelize,
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'entry',
-  },
+    modelName: 'character',
+},
+  
 );
 
 module.exports = Character;
