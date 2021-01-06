@@ -32,10 +32,11 @@ const withAuth = require('../../utils/auth');
 // });
 
 router.post('/', withAuth, async (req, res) => {
+  const character = req.params.character
+  character.user_id = req.session.user_id
   try {
     const newCharacter = await Character.create({
-      ...req.body,
-      user_id: req.session.user_id,
+      character,
     });
 
     res.status(200).json(newCharacter);
