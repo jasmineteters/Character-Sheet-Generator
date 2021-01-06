@@ -128,6 +128,7 @@
         },
       } );
       if (response.ok) {
+        console.log(response);
         document.location.replace('/profile');
       } else {
         console.log(response)
