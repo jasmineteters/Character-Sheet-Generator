@@ -8,7 +8,7 @@
   async function saveButtonHandler()  {
         const name = document.querySelector('#character-name').value.trim();
         const character_class = document.querySelector('#class').value.trim();
-        const character_level = document.querySelector('#level').value.trim();
+        const characterLevel = parseInt(document.querySelector('#level').value.trim());
         const background = document.querySelector('#background').value.trim();
         const ancestry = document.querySelector('#ancestry').value.trim();
         const alignment = document.querySelector('#alignment').value.trim();
@@ -104,13 +104,13 @@
         const spell_3 = document.querySelector('#spell3').value.trim();
         const spell_4 = document.querySelector('#spell4').value.trim();
         const spell_5 = document.querySelector('#spell5').value.trim();
-
+    console.log(characterLevel);
 
     if ( name ) {
       const response = await fetch( '/api/character', {
         method: 'POST',
         body: JSON.stringify( {
-          name, character_class, // character_level, 
+          name, character_class, // characterLevel, 
           background, ancestry, alignment, // proficiency_bonus, 
           
           // strength, strength_bonus,  dexterity, dexterity_bonus, constitution, constitution_bonus, intelligence, intelligence_bonus, wisdom, wisdom_bonus, charisma, charisma_bonus, armor_class, initiative, speed, max_hp, current_hp, hit_dice_total, hit_dice_left, str_save, str_save_value, dex_save, dex_save_value, con_save, con_save_value, int_save, int_save_value, wis_save, wis_save_value, cha_save, cha_save_value, acrobatics, acrobatics_value, animal_handling, animal_handling_value, arcana, arcana_value, athletics, athletics_value, deception, deception_value, history, history_value, insight, insight, insight_value, intimidation, intimidation_value, investigation, investigation_value, medicine, medicine_value, nature, nature_value, perception, perception_value, performance, performance_value, persuasion, persuasion_value, religion, religion_value, sleight_of_hand, sleight_of_hand_value, stealth, stealth_value, survival, survival_value, passive_perception, inspiration, 
