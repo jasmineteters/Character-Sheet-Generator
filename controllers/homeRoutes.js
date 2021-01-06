@@ -25,7 +25,12 @@ router.get('/character', async (req, res) => {
 router.get('/character/:id', async (req, res) => {
   try {
     const characterData = await Character.findByPk(req.params.id, {
-      
+      include: [
+        {
+          model: User,
+          attributes: ["first_name", "last_name"],
+        },
+      ],
     });
 
     const character = characterData.get({ plain: true });
