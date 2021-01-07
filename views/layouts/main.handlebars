@@ -17,17 +17,20 @@
       <div class="text-lg font-dnd text-2xl">
         <p><a class="hover:text-red-900" href="/profile">User Profile</a></p>
       </div>
+      {{#if logged_in}}
       <div class="">
-        <a  href="/profile" id="login" class="shadow-2xl p-2 px-3 mr-1 text-white rounded bg-blue-900 hover:bg-red-900">
+        <a  href="/login" id="login" class="shadow-2xl p-2 px-3 mr-1 text-white rounded bg-blue-900 hover:bg-red-900">
           Login
         </a>
       </div>
+      {{else}}
       <div class="">
         <a id="logout"
                 class="shadow-2xl p-2 px-3 mr-1 text-white rounded bg-blue-900 hover:bg-red-900">
           Log Out
         </a>
       </div>
+      {{/if}}
     </nav>
     <nav class="flex flex-col laptop:hidden laptop:justify-evenly">
       <svg id="burger" class="w-10" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -57,18 +60,21 @@
             </svg>
           </p>
         </div>
+        {{#if logged_in}}
         <div class="text-lg text-2xl">
-          <a id="login" href="/profile"
+          <a id="login" href="/login"
                   class="text-sm shadow-2xl p-1 px-2 m-1 mb-3 text-white rounded bg-blue-900 hover:bg-red-900">
             Login
           </a>
         </div>
+        {{else}}
         <div class="text-lg text-2xl">
         <a  id="logout"
                 class="text-sm shadow-2xl p-1 px-2 m-1 text-white rounded bg-blue-900 hover:bg-red-900">
           Log Out
         </a>
         </div>
+        {{/if}}
       </div>
     </nav>
   </header>
