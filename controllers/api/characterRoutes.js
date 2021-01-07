@@ -2,16 +2,13 @@
 const router = require('express').Router();
 const { Character } = require('../../models');
 const withAuth = require('../../utils/auth');
-
+ 
 router.post('/', withAuth, async (req, res) => {
   const character = req.body
   character.user_id = req.session.user_id
   console.log(character);
   try {
-    const newCharacter = await Character.create({
-      character,
-    });
-
+    const newCharacter = await Character.create(character);
     res.status(200).json(newCharacter);
   } catch (err) {
     res.status(400).json(err);
