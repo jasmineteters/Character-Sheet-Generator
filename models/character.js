@@ -18,13 +18,7 @@ Character.init(
         key: 'id',
       },
       },
-      // date_created: {
-      //   type: DataTypes.DATE,
-      //   allowNull: false,
-      //   defaultValue: DataTypes.NOW,
-      // },
-
-      //header
+     
       name: { type: DataTypes.STRING, allowNull: false },
       character_class: { type: DataTypes.STRING },
       character_level: { type: DataTypes.STRING(3), defaultValue: 0 },
