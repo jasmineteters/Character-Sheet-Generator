@@ -47,7 +47,7 @@ Github Profile: [jasmineteters](github.com/jasmineteters)
 For any questions contact us via email.
 Email: [jasmineteters2020@gmail.com](mailto:jasmineteters2020@gmail.com)
 
-## Link to Video:
+## Link to Live Deployment:
 
 ![https://charactersheet-generator.herokuapp.com/](public/imgs/appScreenshot.jpg)
 
