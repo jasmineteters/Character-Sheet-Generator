@@ -49,5 +49,5 @@ Email: [jasmineteters2020@gmail.com](mailto:jasmineteters2020@gmail.com)
 
 ## Link to Video:
 
-[![Heroku App](public/imgs/appScreenshot.png)](https://charactersheet-generator.herokuapp.com/)
+[![Heroku App](public/imgs/appScreenshot.jpg)](https://charactersheet-generator.herokuapp.com/)
 
